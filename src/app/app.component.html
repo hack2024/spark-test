@@ -1,12 +1,1 @@
-<div
-  *ngFor="let box of boxList; let i = index"
-  class="box"
-  (click)="selectBox(i)"
->
-  <div
-    [ngClass]="{
-      'circle': box.hasCircle,
-      'circle-shadow': i === lastCirclePosition && !box.hasCircle
-    }"
-  ></div>
-</div>
+<app-groceries></app-groceries>

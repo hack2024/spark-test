@@ -1,0 +1,5 @@
+<dir *ngFor="let grocerie of groceries; let i = index" class="grocerie-element">
+  <button (click)="move(false, i)">Up</button>
+  <button (click)="move(true, i)">Down</button>
+  <p>{{ grocerie.name }}</p>
+</dir>
